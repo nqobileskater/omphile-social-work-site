@@ -4,7 +4,7 @@
 This repository contains the official website for **Omphile Social Work and Wellness Services**.
 
 ## 🌐 Live Demo (after deployment)
-https://nqobileskater.github.io/omphile-social-work-site/
+https://nqobileskater.github.io/omphile-social-work-site/multi-page/index.html
 
 ---
 
