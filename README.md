@@ -42,7 +42,7 @@ omphile_site/
 3. Go to **Settings → Pages**, select the `main` branch and `/ (root)` folder.
 4. Your site will be live at:
    ```
-   https://nqobileskater.github.io/omphile-social-work-site/multi-page/index.html
+   https://nqobileskater.github.io/omphile-social-work-site/multi-page
    ```
 
 ---
