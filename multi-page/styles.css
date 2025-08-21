@@ -1,0 +1,70 @@
+
+:root{
+  --blue:#0D6EFD;
+  --green:#198754;
+  --bg:#ffffff;
+  --text:#0f172a;
+  --muted:#64748b;
+  --card:#f8fafc;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+header{
+  position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e2e8f0;
+  backdrop-filter:saturate(180%) blur(10px);
+}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+.brand{display:flex;align-items:center;gap:.75rem;font-weight:700}
+.brand img{height:40px;width:40px;object-fit:contain;border-radius:10px;background:#eef2ff}
+nav ul{display:flex;gap:1rem;list-style:none;padding:0;margin:0;align-items:center}
+.cta{display:inline-block;background:var(--green);color:#fff;padding:.6rem 1rem;border-radius:.75rem;font-weight:600}
+.cta:hover{opacity:.9;text-decoration:none}
+.hero{
+  background:linear-gradient(0deg, rgba(13,110,253,0.08), rgba(25,135,84,0.08)), url('assets/hero-placeholder.jpg') center/cover no-repeat;
+  padding:5rem 0 4rem 0;border-bottom:1px solid #e2e8f0;
+}
+.hero h1{font-size:clamp(1.8rem,4vw,3rem);margin:.25rem 0 .5rem 0}
+.hero p{font-size:1.1rem;color:var(--muted);max-width:800px}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
+.btn{display:inline-block;padding:.7rem 1.1rem;border-radius:.75rem;font-weight:600;border:1px solid #e2e8f0}
+.btn.primary{background:var(--blue);color:#fff;border-color:transparent}
+.btn.secondary{background:#fff;color:var(--text)}
+.section{padding:3rem 0}
+.section h2{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 1rem 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:var(--card);border:1px solid #e2e8f0;border-radius:1rem;padding:1rem}
+.card h3{margin:.25rem 0 .5rem 0}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.info{display:flex;gap:.75rem}
+.info .icon{min-width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;border-radius:.5rem;background:#e7f5ff}
+.badge{display:inline-block;background:#ecfeff;border:1px solid #a5f3fc;padding:.35rem .6rem;border-radius:999px;font-size:.85rem}
+footer{border-top:1px solid #e2e8f0;background:#fff;padding:2rem 0;margin-top:2rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}
+.small{font-size:.92rem;color:var(--muted)}
+.map{width:100%;height:320px;border:0;border-radius:1rem}
+/* responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+  .quick{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  nav ul{display:none}
+}
+/* floating WhatsApp */
+.whatsapp{
+  position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;
+  width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:700;box-shadow:0 10px 25px rgba(0,0,0,.15);z-index:60;
+}
+/* contact form */
+form label{display:block;font-weight:600;margin:.5rem 0 .25rem 0}
+input,textarea{width:100%;padding:.7rem .9rem;border:1px solid #cbd5e1;border-radius:.75rem}
+textarea{min-height:140px;resize:vertical}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:700px){form .row{grid-template-columns:1fr}}
+button[type=submit]{background:var(--blue);color:#fff;border:0;padding:.8rem 1.2rem;border-radius:.75rem;font-weight:700;cursor:pointer}
+button[type=submit]:hover{opacity:.95}
